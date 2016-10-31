@@ -1,6 +1,6 @@
 {
   "name": "js-transpile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transpile any supported language into javascript",
   "main": "index.js",
   "scripts": {
