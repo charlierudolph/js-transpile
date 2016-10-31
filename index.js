@@ -1,11 +1,11 @@
 module.exports = {
-  '.babel.js': function ({fileContents, filePath, nodeModule}) {
-    return require('babel-core').transform(fileContents, {filename: filePath}).code
+  '.babel.js': function (opts) {
+    return require('babel-core').transform(opts.fileContents, {filename: opts.filePath}).code
   },
-  '.coffee': function ({fileContents, filePath, nodeModule}) {
-    return require('coffee-script').compile(fileContents, {filename: filePath})
+  '.coffee': function (opts) {
+    return require('coffee-script').compile(opts.fileContents, {filename: opts.filePath})
   },
-  '.ls': function ({fileContents, filePath, nodeModule}) {
-    return require('livescript').compile(fileContents, {filename: filePath})
+  '.ls': function (opts) {
+    return require('livescript').compile(opts.fileContents, {filename: opts.filePath})
   }
 }
