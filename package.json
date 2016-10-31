@@ -1,0 +1,37 @@
+{
+  "name": "js-transpile",
+  "version": "1.0.0",
+  "description": "Transpile any supported language into javascript",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint index.js test.js",
+    "unit-test": "mocha test.js",
+    "test": "npm run lint && npm run unit-test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/charlierudolph/js-transpile.git"
+  },
+  "author": {
+    "name": "Charlie Rudolph",
+    "email": "charles.w.rudolph@gmail.com"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/charlierudolph/js-transpile/issues"
+  },
+  "homepage": "https://github.com/charlierudolph/js-transpile#readme",
+  "devDependencies": {
+    "babel-core": "^6.18.0",
+    "babel-plugin-transform-es2015-arrow-functions": "^6.8.0",
+    "chai": "^3.5.0",
+    "coffee-script": "^1.11.1",
+    "eslint": "^3.9.0",
+    "eslint-config-standard": "^6.2.1",
+    "eslint-plugin-promise": "^3.3.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "livescript": "^1.5.0",
+    "mocha": "^3.1.2",
+    "tmp": "0.0.29"
+  }
+}
